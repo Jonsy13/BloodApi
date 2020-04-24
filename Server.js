@@ -14,19 +14,19 @@ app.listen(process.env.PORT || 3000, () => {
 app.post('/Predict', (req, res) => {
 
 
-    const Age  = Number(req.body.Age);
-    const Sex = Number(req.body.Sex);
-    const Cp = Number(req.body.Cp);
-    const Trestbps = Number(req.body.Trestbps);
-    const Chol = Number(req.body.Chol);
-    const Fbs = Number(req.body.Fbs);
-    const Restecg = Number(req.body.Restecg);
-    const Thalach = Number(req.body.Thalach);
-    const Exang = Number(req.body.Exang);
-    const OldPeak = Number(req.body.OldPeak);
-    const Slope = Number(req.body.Slope);
-    const Ca = Number(req.body.Ca);
-    const Thal = Number(req.body.Thal);
+    const Age  = req.body.Age;
+    const Sex = req.body.Sex;
+    const Cp = req.body.Cp;
+    const Trestbps = req.body.Trestbps;
+    const Chol = req.body.Chol;
+    const Fbs = req.body.Fbs;
+    const Restecg = req.body.Restecg;
+    const Thalach = req.body.Thalach;
+    const Exang = req.body.Exang;
+    const OldPeak = req.body.OldPeak;
+    const Slope = req.body.Slope;
+    const Ca = req.body.Ca;
+    const Thal = req.body.Thal;
 
     console.log(req.body);
 
